@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment / secrets
+.env
+
+# Generated images
+output/
+
+# Session logs (local tooling)
+.log/
+
+# MCP servers (local tooling)
+mcp-servers/
+.mcp.json
