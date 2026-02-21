@@ -15,6 +15,9 @@ wheels/
 # Generated images
 output/
 
+# Scene config (project-specific; see scenes.example.toml)
+scenes.toml
+
 # Session logs (local tooling)
 .log/
 

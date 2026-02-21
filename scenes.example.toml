@@ -1,0 +1,43 @@
+# Scene configuration for apply_bubbles.py
+#
+# Copy this file to scenes.toml and fill in your own scene data.
+#
+# Each [[scenes]] block defines one image to process.
+#
+# Required fields:
+#   input   — source filename inside output/
+#   output  — destination filename inside output/final/
+#
+# Optional fields:
+#   left        — text for the left speech bubble
+#   right       — text for the right speech bubble
+#   pos_left    — [x, y] position as fractions of image dimensions
+#   pos_right   — [x, y] position as fractions of image dimensions
+#
+# Positions: (0.0, 0.0) = top-left corner, (1.0, 1.0) = bottom-right corner.
+# The bubble tail points to this position, so aim it at the speaker.
+# Omit pos_left/pos_right to use sensible defaults.
+# Omit left/right entirely to skip that bubble.
+
+[[scenes]]
+# Single bubble — greeting only, no response
+input = "20260218_example_greeting_scene.png"
+output = "01_example_greeting.png"
+left = "migwọ"
+pos_left = [0.30, 0.25]
+
+[[scenes]]
+# Two bubbles — greeting and response
+input = "20260218_example_exchange_scene.png"
+output = "02_example_exchange.png"
+left = "migwọ"
+right = "Vrẹndo"
+pos_left = [0.28, 0.25]
+pos_right = [0.85, 0.20]
+
+[[scenes]]
+# Right-side bubble only
+input = "20260218_example_response_scene.png"
+output = "03_example_response.png"
+right = "Merọ"
+pos_right = [0.72, 0.40]
